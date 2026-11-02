@@ -1,0 +1,58 @@
+<main class="ui middle aligned center aligned grid login-page">
+  <section class="column login-column" aria-labelledby="login-title">
+    <div class="ui raised very padded segment">
+      <i class="graduation cap blue icon" aria-hidden="true"></i>
+      <h1 id="login-title" class="ui header">Iniciar sesión</h1>
+      <p>Ingresa a tu cuenta de AcademiaHub</p>
+
+      <form class="ui large form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <div class="field" [class.error]="emailInput.invalid && emailInput.touched">
+          <label for="email">Correo electrónico</label>
+          <div class="ui left icon input">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="nombre@ejemplo.com"
+              autocomplete="username"
+              [(ngModel)]="email"
+              #emailInput="ngModel"
+              required
+              email
+            />
+            <i class="envelope icon" aria-hidden="true"></i>
+          </div>
+          @if (emailInput.invalid && emailInput.touched) {
+            <div class="ui pointing red basic label">
+              Ingresa un correo electrónico válido.
+            </div>
+          }
+        </div>
+
+        <div class="field" [class.error]="passwordInput.invalid && passwordInput.touched">
+          <label for="password">Contraseña</label>
+          <div class="ui left icon input">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Tu contraseña"
+              autocomplete="current-password"
+              [(ngModel)]="password"
+              #passwordInput="ngModel"
+              required
+            />
+            <i class="lock icon" aria-hidden="true"></i>
+          </div>
+          @if (passwordInput.invalid && passwordInput.touched) {
+            <div class="ui pointing red basic label">La contraseña es obligatoria.</div>
+          }
+        </div>
+
+        <button class="ui fluid large primary button" type="submit" [disabled]="loginForm.invalid">
+          Iniciar sesión
+        </button>
+      </form>
+    </div>
+  </section>
+</main>
