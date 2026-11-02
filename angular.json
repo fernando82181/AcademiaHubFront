@@ -34,6 +34,7 @@
               "node_modules/semantic-ui-css/semantic.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
+            "scripts": ["node_modules/semantic-ui-css/semantic.js"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
