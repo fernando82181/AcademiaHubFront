@@ -1,0 +1,9 @@
+.users-page {
+  min-height: calc(100vh - 76px);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.users-page .ui.header {
+  color: #22396f;
+}

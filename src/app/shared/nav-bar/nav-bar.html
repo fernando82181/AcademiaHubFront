@@ -1,0 +1,80 @@
+<header class="admin-navbar">
+  <a class="navbar-brand" routerLink="/dashboard" aria-label="AcademiaHub, ir al panel de administración">
+    <img src="assets/logo-academiahub-opcion-4.svg" alt="AcademiaHub">
+  </a>
+
+  <nav class="navbar-links" aria-label="Navegación de administración">
+    <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <i class="bi bi-speedometer2" aria-hidden="true"></i>
+      Panel
+    </a>
+    <a routerLink="/usuarios" routerLinkActive="active">
+      <i class="bi bi-people" aria-hidden="true"></i>
+      Usuarios
+    </a>
+  </nav>
+
+  <div class="navbar-account">
+    <button
+      class="profile-toggle"
+      type="button"
+      (click)="toggleProfilePanel()"
+      [attr.aria-expanded]="profilePanelOpen"
+      aria-controls="profile-panel"
+      aria-label="Editar perfil"
+    >
+      @if (profileImageUrl) {
+        <img class="profile-avatar" [src]="profileImageUrl" alt="">
+      } @else {
+        <span class="profile-avatar profile-avatar-placeholder" aria-hidden="true">
+          <i class="bi bi-person-fill"></i>
+        </span>
+      }
+      <span class="profile-toggle-label">Mi perfil</span>
+      <i class="bi bi-chevron-down" aria-hidden="true"></i>
+    </button>
+
+    <button class="logout-button" type="button" (click)="logout()">
+      <i class="bi bi-box-arrow-right" aria-hidden="true"></i>
+      Cerrar sesión
+    </button>
+
+    @if (profilePanelOpen) {
+      <section class="profile-panel" id="profile-panel" aria-label="Configuración del perfil">
+        <h2>Mi perfil</h2>
+        <p class="profile-email">{{ userEmail || 'Usuario de AcademiaHub' }}</p>
+
+        <div class="profile-panel-avatar">
+          @if (profileImageUrl) {
+            <img class="profile-avatar-large" [src]="profileImageUrl" alt="Imagen de perfil actual">
+          } @else {
+            <span class="profile-avatar-large profile-avatar-placeholder" aria-hidden="true">
+              <i class="bi bi-person-fill"></i>
+            </span>
+          }
+        </div>
+
+        <input
+          class="avatar-file-input"
+          id="profile-image-upload"
+          type="file"
+          accept="image/jpeg,image/png,image/gif,image/webp"
+          (change)="onAvatarSelected($event)"
+        >
+        <label class="avatar-upload-button" for="profile-image-upload">
+          <i class="bi bi-camera" aria-hidden="true"></i>
+          Cambiar imagen
+        </label>
+        @if (profileImageUrl) {
+          <button class="avatar-remove-button" type="button" (click)="removeAvatar()">
+            Quitar imagen
+          </button>
+        }
+        @if (profileError) {
+          <p class="profile-error" role="alert">{{ profileError }}</p>
+        }
+        <p class="profile-hint">Imagen JPG, PNG, GIF o WebP; máximo 2 MB.</p>
+      </section>
+    }
+  </div>
+</header>

@@ -1,0 +1,240 @@
+.admin-navbar {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  min-height: 76px;
+  padding: 0.75rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid rgba(34, 57, 111, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 2px 12px rgba(34, 57, 111, 0.08);
+}
+
+.navbar-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.navbar-brand img {
+  display: block;
+  width: 172px;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-links a,
+.logout-button,
+.profile-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #22396f;
+  font: inherit;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  padding: 0.7rem 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus-visible,
+.navbar-links a.active {
+  background: #e8f4fc;
+  color: #1678c2;
+}
+
+.navbar-account {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profile-toggle {
+  padding: 0.35rem 0.55rem;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profile-toggle:hover,
+.profile-toggle:focus-visible {
+  background: #f1f6fb;
+}
+
+.profile-avatar,
+.profile-avatar-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #e8f4fc;
+  color: #2185d0;
+  object-fit: cover;
+}
+
+.profile-avatar {
+  width: 38px;
+  height: 38px;
+}
+
+.profile-avatar-placeholder {
+  font-size: 1.35rem;
+}
+
+.logout-button {
+  padding: 0.7rem 0.85rem;
+  background: #f1f6fb;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.logout-button:hover,
+.logout-button:focus-visible {
+  background: #e3eef8;
+  color: #125b91;
+}
+
+.profile-panel {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  z-index: 30;
+  width: min(320px, calc(100vw - 2rem));
+  padding: 1.25rem;
+  border: 1px solid rgba(34, 57, 111, 0.12);
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(34, 57, 111, 0.18);
+  text-align: center;
+}
+
+.profile-panel h2 {
+  margin: 0;
+  color: #22396f;
+  font-size: 1.15rem;
+}
+
+.profile-email {
+  overflow-wrap: anywhere;
+  margin: 0.35rem 0 1rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.profile-panel-avatar {
+  margin-bottom: 1rem;
+}
+
+.profile-avatar-large {
+  width: 88px;
+  height: 88px;
+  font-size: 2rem;
+}
+
+.avatar-upload-button,
+.avatar-remove-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 38px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #2185d0;
+  border-radius: 0.45rem;
+  color: #1678c2;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.avatar-upload-button:hover,
+.avatar-remove-button:hover {
+  background: #f1f8fd;
+}
+
+.avatar-file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.avatar-file-input:focus-visible + .avatar-upload-button {
+  outline: 2px solid #1678c2;
+  outline-offset: 3px;
+}
+
+.avatar-remove-button {
+  margin-left: 0.4rem;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+
+.profile-error {
+  margin: 0.8rem 0 0;
+  color: #b42318;
+  font-size: 0.85rem;
+}
+
+.profile-hint {
+  margin: 0.8rem 0 0;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 700px) {
+  .admin-navbar {
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    padding-block: 0.75rem;
+  }
+
+  .navbar-brand img {
+    width: 145px;
+  }
+
+  .navbar-links {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .navbar-account {
+    margin-left: auto;
+    gap: 0.35rem;
+  }
+
+  .profile-toggle-label {
+    display: none;
+  }
+
+  .logout-button {
+    padding: 0.65rem;
+    font-size: 0;
+  }
+
+  .logout-button i {
+    font-size: 1rem;
+  }
+}
