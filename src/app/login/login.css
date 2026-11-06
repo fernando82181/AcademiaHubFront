@@ -1,8 +1,15 @@
 .login-page {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   min-height: 100vh;
+  margin: 0 !important;
   padding: 1rem;
 }
 
 .login-column {
+  width: 100%;
   max-width: 450px;
 }

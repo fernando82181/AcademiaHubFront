@@ -1,1 +1,123 @@
-<p>dashboard works!</p>
+<main class="ui container dashboard-page">
+    <header class="dashboard-header">
+        <div>
+            
+            <img class="ui centered image" src="../../../assets/logo-academiahub-opcion-4.svg" alt="">
+            <br>
+            <h1 class="ui header">
+                Panel de administración
+                <div class="sub header">Selecciona una opción para gestionar la plataforma académica.</div>
+            </h1>
+        </div>
+    </header>
+
+    <section aria-labelledby="admin-options-title">
+        
+
+        <div class="ui three stackable cards dashboard-options">
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-users.svg" alt="Gestión de usuarios">
+                </div>
+                <div class="content">
+                    <div class="header">Gestión de usuarios</div>
+                    <div class="description">Crear, consultar, editar, activar y desactivar usuarios.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--users"><i class="bi bi-people"
+                        aria-hidden="true"></i> Gestionar</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-roles.svg" alt="Asignación de roles a usuarios">
+                </div>
+                <div class="content">
+                    <div class="header">Asignación de roles</div>
+                    <div class="description">Asignar roles a los usuarios del sistema.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--roles"><i class="bi bi-person-check"
+                        aria-hidden="true"></i> Asignar rol</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-subject-create.svg" alt="Creación de una asignatura">
+                </div>
+                <div class="content">
+                    <div class="header">Crear asignatura</div>
+                    <div class="description">Registrar código, nombre, descripción, créditos y estado.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--subject-create"><i
+                        class="bi bi-journal-plus" aria-hidden="true"></i> Crear asignatura</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-subject-edit.svg" alt="Edición de una asignatura">
+                </div>
+                <div class="content">
+                    <div class="header">Editar asignatura</div>
+                    <div class="description">Modificar los datos permitidos de una asignatura.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--subject-edit"><i class="bi bi-pencil-square"
+                        aria-hidden="true"></i> Editar asignatura</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-group-create.svg" alt="Creación de un grupo académico">
+                </div>
+                <div class="content">
+                    <div class="header">Crear grupo</div>
+                    <div class="description">Crear grupos para una asignatura y un periodo académico.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--group-create"><i class="bi bi-diagram-3"
+                        aria-hidden="true"></i> Crear grupo</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-teacher.svg" alt="Asignación de un docente a un grupo">
+                </div>
+                <div class="content">
+                    <div class="header">Asignar docente a grupo</div>
+                    <div class="description">Asociar un docente a un grupo académico.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--teacher"><i class="bi bi-person-plus"
+                        aria-hidden="true"></i> Asignar docente</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-students.svg" alt="Gestión de estudiantes del grupo">
+                </div>
+                <div class="content">
+                    <div class="header">Gestionar estudiantes del grupo</div>
+                    <div class="description">Agregar, retirar y consultar estudiantes de un grupo.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--students"><i class="bi bi-people"
+                        aria-hidden="true"></i> Gestionar estudiantes</button>
+            </article>
+
+            <article class="ui fluid card dashboard-option">
+                <div class="image">
+                    <img class="ui fluid image" src="assets/dashboard-period.svg" alt="Gestión del periodo académico">
+                </div>
+                <div class="content">
+                    <div class="header">Gestionar periodo académico</div>
+                    <div class="description">Crear y administrar periodos académicos.</div>
+                </div>
+                <div class="extra content"><span class="ui tiny label bg-blue">Administrador</span></div>
+                <button class="ui button dashboard-action dashboard-action--period"><i class="bi bi-calendar-check"
+                        aria-hidden="true"></i> Gestionar periodo</button>
+            </article>
+        </div>
+    </section>
+</main>

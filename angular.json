@@ -27,6 +27,21 @@
                 "glob": "Login.svg",
                 "input": "assets",
                 "output": "assets"
+              },
+              {
+                "glob": "GestorUsuarios.png",
+                "input": "assets",
+                "output": "assets"
+              },
+              {
+                "glob": "dashboard-*.svg",
+                "input": "assets",
+                "output": "assets"
+              },
+              {
+                "glob": "logo-academiahub-*.svg",
+                "input": "assets",
+                "output": "assets"
               }
             ],
             "styles": [

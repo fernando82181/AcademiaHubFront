@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none">
+  <title>AcademiaHub - Opcion 2, monograma conectado</title>
+  <rect x="18" y="24" width="152" height="152" rx="76" fill="#153F70"/>
+  <circle cx="94" cy="100" r="54" stroke="#75D6C1" stroke-width="3" opacity=".8"/>
+  <path d="M61 127l29-66h10l29 66h-16l-18-43-18 43H61z" fill="#fff"/>
+  <path d="M104 94h27v34h-27" stroke="#75D6C1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="58" cy="58" r="8" fill="#75D6C1"/>
+  <circle cx="132" cy="53" r="8" fill="#75D6C1"/>
+  <circle cx="139" cy="143" r="8" fill="#75D6C1"/>
+  <path d="M63 63l12 9M128 61l-9 10M131 137l-10-8" stroke="#75D6C1" stroke-width="3"/>
+  <text x="202" y="104" fill="#153F70" font-family="Arial,sans-serif" font-size="46" font-weight="700">Academia<tspan fill="#159C87">Hub</tspan></text>
+  <text x="205" y="137" fill="#71839A" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">CONOCIMIENTO EN COMUNIDAD</text>
+</svg>

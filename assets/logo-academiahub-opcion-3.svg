@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none">
+  <title>AcademiaHub - Opcion 3, campus y libro</title>
+  <rect x="18" y="24" width="152" height="152" rx="32" fill="#F0F6F2"/>
+  <path d="M46 81l48-29 48 29H46z" fill="#1C675C"/>
+  <path d="M55 84h78v8H55z" fill="#1C675C"/>
+  <path d="M64 96v28M82 96v28M100 96v28M118 96v28" stroke="#4F9A83" stroke-width="8" stroke-linecap="round"/>
+  <path d="M48 128h92" stroke="#1C675C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M55 143c15-7 28-6 39 2 11-8 24-9 39-2v14c-15-6-28-5-39 3-11-8-24-9-39-3v-14z" fill="#fff" stroke="#1C675C" stroke-width="4" stroke-linejoin="round"/>
+  <text x="202" y="104" fill="#174B45" font-family="Arial,sans-serif" font-size="46" font-weight="700">Academia<tspan fill="#2C8B72">Hub</tspan></text>
+  <text x="205" y="137" fill="#71877F" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">TU ESPACIO ACADEMICO</text>
+</svg>

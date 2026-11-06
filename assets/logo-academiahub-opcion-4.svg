@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none">
+  <title>AcademiaHub - Opcion 4, red de aprendizaje</title>
+  <rect x="18" y="24" width="152" height="152" rx="38" fill="#F1EEFF"/>
+  <path d="M94 97l-30-28M94 97l35-31M94 97l-34 34M94 97l37 33" stroke="#7C67D8" stroke-width="5"/>
+  <circle cx="61" cy="65" r="14" fill="#5C48B8"/>
+  <circle cx="133" cy="63" r="14" fill="#2784C7"/>
+  <circle cx="56" cy="137" r="14" fill="#2784C7"/>
+  <circle cx="137" cy="136" r="14" fill="#5C48B8"/>
+  <circle cx="94" cy="97" r="22" fill="#fff" stroke="#7C67D8" stroke-width="6"/>
+  <path d="M84 101c7-4 14-4 20 0v12c-6-4-13-4-20 0v-12zM104 101c6-4 13-4 20 0v12c-7-4-14-4-20 0v-12z" fill="#DAD3FF" stroke="#5C48B8" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="202" y="104" fill="#34305C" font-family="Arial,sans-serif" font-size="46" font-weight="700">Academia<tspan fill="#6C57C8">Hub</tspan></text>
+  <text x="205" y="137" fill="#817D9B" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">UNA RED PARA APRENDER</text>
+</svg>

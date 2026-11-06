@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="45" y1="28" x2="680" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9FAF7"/>
+      <stop offset="1" stop-color="#C9EEE7"/>
+    </linearGradient>
+    <linearGradient id="book" x1="208" y1="96" x2="516" y2="282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#F3FFFC"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h720v360H0z"/>
+  <circle cx="112" cy="72" r="47" fill="#9DDDD1" opacity=".5"/>
+  <circle cx="619" cy="287" r="71" fill="#9DDDD1" opacity=".4"/>
+  <path d="M184 111c54-21 110-17 176 9v162c-63-26-122-28-176-4V111z" fill="#0F8A78" opacity=".2"/>
+  <path d="M360 120c60-27 117-30 176-9v167c-57-23-115-21-176 4V120z" fill="#0F8A78" opacity=".13"/>
+  <path d="M184 96c56-22 115-19 176 9v163c-62-27-120-29-176-5V96z" fill="url(#book)"/>
+  <path d="M360 105c61-28 120-31 176-9v167c-58-24-117-22-176 5V105z" fill="#fff"/>
+  <path d="M360 106v163" stroke="#C9EAE3" stroke-width="5"/>
+  <path d="M213 130c40-10 78-8 116 6M213 156c40-10 78-8 116 6M213 182c40-10 78-8 116 6" stroke="#A7DCD2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M391 135c40-14 78-16 116-6M391 161c40-14 78-16 116-6M391 187c40-14 78-16 116-6" stroke="#A7DCD2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="540" cy="92" r="43" fill="#0F8A78"/>
+  <path d="M540 72v40M520 92h40" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <rect x="270" y="240" width="182" height="36" rx="18" fill="#D8F3ED"/>
+  <text x="361" y="263" fill="#0F766E" font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">NUEVA ASIGNATURA</text>
+</svg>

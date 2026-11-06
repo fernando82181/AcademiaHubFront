@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none">
+  <title>AcademiaHub - Opcion 5, escudo academico</title>
+  <rect x="18" y="24" width="152" height="152" rx="38" fill="#FFF3E8"/>
+  <path d="M94 43l48 18v39c0 34-20 55-48 69-28-14-48-35-48-69V61l48-18z" fill="#C96C35"/>
+  <path d="M94 55l36 13v32c0 26-14 43-36 55-22-12-36-29-36-55V68l36-13z" fill="#FFF9F2"/>
+  <path d="M68 86c10-5 18-4 26 2v34c-8-6-16-7-26-2V86zM94 88c8-6 16-7 26-2v34c-10-5-18-4-26 2V88z" fill="#F7DDCA" stroke="#A94F2C" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M67 77l27-12 27 12-27 12-27-12z" fill="#A94F2C"/>
+  <path d="M114 81v15" stroke="#A94F2C" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="114" cy="99" r="3.5" fill="#A94F2C"/>
+  <text x="202" y="104" fill="#62351F" font-family="Arial,sans-serif" font-size="46" font-weight="700">Academia<tspan fill="#C96C35">Hub</tspan></text>
+  <text x="205" y="137" fill="#987B69" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">FORMACION CON PROPOSITO</text>
+</svg>
